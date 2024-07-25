@@ -93,11 +93,15 @@ function Home() {
             </li>
           ))}
         </ul>
-        <div className="register-login-container">
+        <div className="register-login-container" style={{display:"flex" , flexDirection:"row" , justifyContent:"space-between"}}>
           {!currentUser ? (
             <>
-              <a href="/register">Register</a>
-              <a href="/login">Login</a>
+              <button className="action-button" style={{ fontSize:"20px"}} onClick={() => window.location.href = '/register'}>
+        Register Now!
+      </button>
+      <button className="action-button" style={{ fontSize:"20px"}} onClick={() => window.location.href = '/login'}>
+        Login!
+      </button>
             </>
           ) : (
             <div>

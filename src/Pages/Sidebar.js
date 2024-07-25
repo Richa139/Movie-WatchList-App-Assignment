@@ -88,7 +88,7 @@ const Sidebar = () => {
       <div className="register-login-container">
         {!isLoggedIn ? (
           <>
-            <a href="/login">Login</a>
+            <a href="/login" style={{color:"red"}}>Login</a>
             <a href="/register">Register</a>
           </>
         ) : (
