@@ -1,0 +1,23 @@
+.welcome-card {
+    border: 2px solid red; /* Red border color */
+    border-radius: 8px;
+    padding: 2.5rem;
+    margin-bottom: 1.5rem;
+    background-color: #f4f4f4;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .welcome-card h1 {
+    margin: 0;
+    font-size: 2rem;
+    color: red; /* Red text color */
+  }
+  
+  .welcome-card p {
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.4;
+  }
+  

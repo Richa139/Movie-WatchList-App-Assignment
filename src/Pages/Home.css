@@ -1,0 +1,457 @@
+/* src/Pages/Home.css */
+.home-container {
+  display: flex;
+  height: 100vh; /* Full viewport height */
+}
+
+
+.sidebar {
+  height: 100vh; /* Full viewport height */
+  overflow-y: auto; /* Enable vertical scrolling */
+  width: 250px; /* Adjust as needed */
+  position: fixed; /* Fix the sidebar to the left */
+  top: 0; /* Align to the top of the viewport */
+  left: 0; /* Align to the left of the viewport */
+  background-color: #f4f4f4; /* Optional: Background color for the sidebar */
+  border-right: 1px solid #ddd; /* Optional: Border to distinguish the sidebar */
+  padding: 20px; /* Optional: Padding for better spacing */
+}
+
+.sidebar h2 {
+  color: red;
+  margin-top: 0;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  display:flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.sidebar button {
+  background-color: red;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.sidebar button:hover {
+  background-color: #c82333; /* Slightly darker red on hover */
+}
+
+.sidebar .register-login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: auto; /* Pushes content to the bottom */
+}
+
+.sidebar .register-login-container a {
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: #007bff;
+  font-size: 0.9rem;
+}
+
+.sidebar .register-login-container a:hover {
+  text-decoration: underline;
+}
+
+.sidebar .register-login-container p {
+  margin: 10px 0;
+  font-size: 0.9rem;
+}
+
+/* Search Bar Styles */
+/* Search Bar Styles */
+/* Search Bar Styles */
+.search-bar-container {
+  display: flex;
+  width: 100%; /* Ensure container takes full width */
+  gap: 0.5rem; /* Space between the search bar and button */
+}
+.search-bar-wrapper{
+  width: 100%;
+  display: flex;
+}
+.search-bar {
+  flex: 1; /* Make the search bar take up the remaining space */
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  width: 100%; /* Ensure it stretches to fill the container */
+}
+
+.search-button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: red;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background-color: #c82333;
+}
+
+
+/* Playlist Management Styles */
+.my-list {
+  margin-top: 1rem;
+}
+
+.personal-watchlists {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.personal-watchlists li {
+  margin-bottom: 1rem;
+}
+
+.playlist-name {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.add-playlist-button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: red;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-playlist-button:hover {
+  background-color: #c82333;
+}
+
+.playlist-selector {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.user-info {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-info img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.user-info p {
+  margin: 0.5rem 0;
+}
+
+.user-info button,
+.user-info a {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  border: none;
+  background-color: red;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.user-info button:hover,
+.user-info a:hover {
+  background-color: #c82333;
+}
+
+.main-content {
+  margin-left: 250px; /* Offset by the width of the sidebar */
+  padding: 20px; /* Padding for spacing inside the main content area */
+  box-sizing: border-box; /* Include padding in the width calculation */
+  flex:1
+}
+.welcome-card {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.movies-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.movie-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 200px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.movie-image-container {
+  position: relative;
+}
+
+.movie-poster {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.add-to-watchlist {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: red;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.add-to-watchlist:hover {
+  background-color: #c82333;
+}
+
+.movie-details {
+  padding: 10px;
+}
+
+.movie-rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.movie-title {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.movie-genre {
+  color: #555;
+}
+
+.search-icon {
+  display: flex;
+  align-items: center;
+  margin-right: 0.5rem;
+}
+
+.watchlist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.watchlist-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.watchlist-poster {
+  width: 50px;
+  height: 75px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.delete-button {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #dc3545;
+  color: #fff;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.delete-button:hover {
+  background-color: #c82333;
+}
+
+
+
+
+
+/* src/Pages/Home.css */
+
+.movie-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 200px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  margin: 10px;
+}
+
+.movie-image-container {
+  position: relative;
+}
+
+.movie-poster {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.add-to-watchlist {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: red;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.add-to-watchlist:hover {
+  background-color: #c82333;
+}
+
+.playlist-dropdown {
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  top: 50px;
+  right: 10px;
+  z-index: 10;
+}
+
+.playlist-dropdown select {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.playlist-dropdown button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: red;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.playlist-dropdown button:hover {
+  background-color: #c82333;
+}
+
+.movie-details {
+  padding: 10px;
+}
+
+.movie-title {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.movie-genre {
+  color: #555;
+}
+
+.movie-rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+/* Overlay for movie details */
+.movie-details-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh; /* Full viewport height for overlay */
+  background: rgba(0, 0, 0, 0.7); /* Dark semi-transparent background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000; /* Ensure the overlay is above other content */
+}
+
+.movie-details {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  width: 80%;
+  max-width: 500px; /* Maximum width of the details box */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.movie-details img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.movie-details h2 {
+  margin-top: 0;
+  font-size: 1.5rem;
+}
+
+.movie-details p {
+  margin: 10px 0;
+  font-size: 1rem;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: red;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.close-button:hover {
+  background-color: #c82333;
+}
