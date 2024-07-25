@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { setWatchlist } from '../redux/actions/watchListActions';
-import './Auth.css'; // Use the same CSS file for consistent styling
+import './Auth.css';
 
 function Login() {
   const [email, setEmail] = useState('');
@@ -16,7 +16,7 @@ function Login() {
     if (user) {
       localStorage.setItem('currentUser', email);
       dispatch(setWatchlist(user.watchlist));
-      navigate('/'); // Redirect to home page after login
+      navigate('/'); 
     } else {
       alert('User not found. Please register.');
     }

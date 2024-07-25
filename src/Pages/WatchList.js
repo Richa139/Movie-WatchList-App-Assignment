@@ -1,4 +1,3 @@
-// src/pages/Watchlist.js
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { removeMovieFromWatchlist } from '../redux/actions/watchListActions';
