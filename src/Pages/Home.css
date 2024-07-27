@@ -16,6 +16,56 @@
   border-right: 1px solid #ddd; /* Optional: Border to distinguish the sidebar */
   padding: 20px; /* Optional: Padding for better spacing */
 }
+.action-button {
+  font-size: 20px;
+  padding: 10px 20px;
+  margin: 5px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.action-button:hover {
+  background-color: #0056b3;
+}
+
+.register-login-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* Media query for mobile screens */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 150px; /* Adjusted width for mobile */
+  }
+  .main-content{
+    margin-left: 145px !important;
+  }
+  .action-button {
+    font-size: 16px; /* Smaller font size for mobile */
+    padding: 8px 16px;
+  }
+
+  .register-login-container {
+    flex-direction: column !important;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar {
+    width: 100px; /* Even smaller width for very small screens */
+  }
+
+  .action-button {
+    font-size: 14px; /* Smaller font size for very small screens */
+    padding: 6px 12px;
+  }
+}
 
 .sidebar h2 {
   color: red;

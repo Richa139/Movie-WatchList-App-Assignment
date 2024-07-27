@@ -97,7 +97,7 @@ function Home() {
           {!currentUser ? (
             <>
               <button className="action-button" style={{ fontSize:"20px"}} onClick={() => window.location.href = '/register'}>
-        Register Now!
+        Register!
       </button>
       <button className="action-button" style={{ fontSize:"20px"}} onClick={() => window.location.href = '/login'}>
         Login!
